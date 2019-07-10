@@ -1,0 +1,13 @@
+/node_modules
+/dist/*
+/src/services/redux/translations/*
+!/src/services/redux/translations/.gitkeep
+!/src/services/redux/translations/intl_fr.json
+/coverage/*
+/.idea/*
+yarn.lock
+.vscode/
+
+# IDE/editor specific
+*.swp
+*.swo
