@@ -1,5 +1,8 @@
 Collapse animation with React and Hooks adaptation from
+
 https://developers.google.com/web/updates/2017/03/performant-expand-and-collapse
+
+Have to clean it, but it work
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
