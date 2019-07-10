@@ -1,0 +1,66 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+.logo {
+  display: block;
+
+  .hexagoneLetter {
+    fill: $white;
+  }
+
+  &.color {
+    .hexagone {
+      fill: url(#default);
+    }
+    .letters {
+      fill: $bellaNotte;
+    }
+  }
+
+  &.colorWhite {
+    .hexagone {
+      fill: url(#default);
+    }
+    .letters {
+      fill: $white;
+    }
+  }
+
+  &.black {
+    .hexagone {
+      fill: $black;
+    }
+    .letters {
+      fill: $black;
+    }
+  }
+
+  &.white {
+    .hexagone {
+      fill: $white;
+    }
+    .hexagoneLetter {
+      fill: $black;
+    }
+    .letters {
+      fill: $white;
+    }
+  }
+
+  &.b2b {
+    .hexagone {
+      fill: url(#b2b);
+    }
+  }
+
+  &.mf {
+    .hexagone {
+      fill: url(#mf);
+    }
+  }
+}

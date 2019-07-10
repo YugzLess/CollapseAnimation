@@ -1,0 +1,84 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+.tabs {
+  overflow: hidden;
+
+  .tabList {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    @media (pointer: fine) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .tabLabel {
+    position: relative;
+    display: inline-flex;
+    border-bottom: em(4) solid $squidInk;
+    cursor: pointer;
+
+    & > span,
+    & > a {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: em($halfSpace, 14) em($space, 14);
+      text-align: center;
+      color: $squidInk;
+      text-decoration: none;
+      transition: color $fastTimeout $in;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $blueMood;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: em(4);
+        left: 0;
+        top: 100%;
+        background-color: $blueMood;
+        transition: width $timeout $out;
+        will-change: width;
+      }
+
+      &.active:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .tabContent {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: em($space);
+    & > div {
+      position: relative;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+.tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: em(32, 14);
+  padding: 0 em($space);
+  font-size: em(14);
+  background-color: $white;
+  border: em($border-width) $border-style transparent;
+  border-radius: em(17, 14);
+  text-align: center;
+  transition: background-color $timeout ease;
+  cursor: default;
+  white-space: nowrap;
+  &:not(:last-child) {
+    margin-right: em($space);
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $manoBlack;
+  }
+
+  &.primary,
+  &.secondary,
+  &:active,
+  &.disabled,
+  &.purplerain {
+    color: $white;
+  }
+
+  &.default {
+    border-color: $borderColor;
+  }
+
+  &.primary,
+  &.balata {
+    background-color: $balataGreen;
+    &:active {
+      background-color: $squidInk;
+    }
+  }
+
+  &.secondary,
+  &.secondary:active,
+  &.bellanotte {
+    background-color: $bellaNotte;
+  }
+
+  &.tertiary,
+  &.tertiary:active,
+  &.playa {
+    background-color: $vaALaPlaya;
+  }
+
+  &.artic {
+    background-color: $articCitric;
+  }
+
+  &.hellblau {
+    background-color: $hellblau;
+  }
+
+  &.purplerain {
+    background-color: $purpleRain;
+  }
+
+  &.kaktus {
+    background-color: $kaktus;
+  }
+
+  &.disabled {
+    background-color: $greyDark;
+    cursor: not-allowed;
+  }
+}

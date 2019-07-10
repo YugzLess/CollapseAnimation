@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip should match snapshot 1`] = `
+<Tooltip
+  bgColor="#0c193a"
+  className=""
+  content="test"
+  dataQa=""
+  position="top"
+>
+  <Toggle>
+    <span
+      className="toolkit transmitter"
+      data-qa=""
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onWheel={[Function]}
+      role="button"
+    >
+      test
+    </span>
+    <Portal>
+      <Portal
+        containerInfo={
+          <div
+            class="portal"
+          />
+        }
+      >
+        <Transition
+          config={
+            Object {
+              "friction": 23,
+              "mass": 0.6,
+              "precision": 0.1,
+              "tension": 350,
+            }
+          }
+          enter={
+            Object {
+              "o": 1,
+              "s": 1,
+            }
+          }
+          from={
+            Object {
+              "o": 0,
+              "s": 0.6,
+            }
+          }
+          items={false}
+          keys={[Function]}
+          leave={
+            Object {
+              "o": 0,
+              "s": 0.6,
+            }
+          }
+          native={true}
+          reset={false}
+          unique={true}
+        >
+          <ForwardRef
+            config={
+              Object {
+                "friction": 23,
+                "mass": 0.6,
+                "precision": 0.1,
+                "tension": 350,
+              }
+            }
+            delay={0}
+            filter={[Function]}
+            from={
+              Object {
+                "o": 0,
+                "s": 0.6,
+              }
+            }
+            key="false"
+            native={true}
+            primitive={[Function]}
+            reset={false}
+            state="enter"
+            states={
+              Object {
+                "enter": Object {
+                  "o": 1,
+                  "s": 1,
+                },
+              }
+            }
+          >
+            <KeyframesImpl
+              config={
+                Object {
+                  "friction": 23,
+                  "mass": 0.6,
+                  "precision": 0.1,
+                  "tension": 350,
+                }
+              }
+              delay={0}
+              filter={[Function]}
+              forwardRef={null}
+              from={
+                Object {
+                  "o": 0,
+                  "s": 0.6,
+                }
+              }
+              native={true}
+              primitive={[Function]}
+              reset={false}
+              state="enter"
+              states={
+                Object {
+                  "enter": Object {
+                    "o": 1,
+                    "s": 1,
+                  },
+                }
+              }
+            >
+              <Spring
+                config={
+                  Object {
+                    "friction": 23,
+                    "mass": 0.6,
+                    "precision": 0.1,
+                    "tension": 350,
+                  }
+                }
+                delay={0}
+                force={false}
+                from={
+                  Object {
+                    "o": 0,
+                    "s": 0.6,
+                  }
+                }
+                immediate={false}
+                inject={[Function]}
+                native={true}
+                onRest={[Function]}
+                reset={false}
+                to={
+                  Object {
+                    "o": 1,
+                    "s": 1,
+                  }
+                }
+              />
+            </KeyframesImpl>
+          </ForwardRef>
+        </Transition>
+      </Portal>
+    </Portal>
+  </Toggle>
+</Tooltip>
+`;

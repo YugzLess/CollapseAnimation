@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabLabel should match snapshot 1`] = `
+<li
+  aria-selected={true}
+  className="tabLabel"
+  role="tab"
+>
+  <span
+    className="toolkit active"
+    onClick={[Function]}
+  >
+    test
+  </span>
+</li>
+`;

@@ -1,0 +1,77 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+$fastTimeout: 150ms;
+
+.container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  &:not(:last-child) {
+    margin-bottom: em($doubleSpace);
+  }
+
+  &.reset {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  margin-left: em($halfSpace);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.switch {
+  position: absolute;
+  left: -9999px;
+  border: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+// All labels are reseted to font-size 14 in index.scss
+.label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: em(44, 14);
+  height: em(28, 14);
+  background-color: $greyDarker;
+  border-radius: em(30, 14);
+  cursor: pointer;
+  transition: background $fastTimeout $in;
+
+  &:after,
+  &.active:after {
+    transition: transform $fastTimeout $in;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: em(24, 14);
+    height: em(24, 14);
+    left: em(2, 14);
+    top: em(2, 16);
+    background-color: $white;
+    border-radius: 100%;
+    box-shadow: 0 em(1, 14) em(1, 14) em(1, 14) rgba(0, 0, 0, 0.2);
+  }
+
+  &.active {
+    background-color: $balataGreen;
+
+    &:after {
+      content: '';
+      transform: translateX(em(16, 14));
+    }
+  }
+}

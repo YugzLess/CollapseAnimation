@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown template should match snapshot 1`] = `
+<div
+  className="toolkit wrapper my class name"
+>
+  <Button
+    className="button"
+    dataQa="testQa"
+    disabled={true}
+    fill="#ffffff"
+    onClick={[Function]}
+    reverse={false}
+    size="default"
+    style={
+      Object {
+        "backgroundColor": "#fff",
+      }
+    }
+    theme="default"
+    title=""
+    type="button"
+  >
+    titleTest
+    <Icon
+      className="iconButton rotate"
+      component={[Function]}
+      dataQa=""
+      fill="#666"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      size="16"
+      stroke="#555"
+    />
+  </Button>
+  <OptionContainer
+    active="active"
+    className="my class name"
+    on={true}
+    onClick={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "labelTest",
+          "on": true,
+          "value": "valueTest",
+        },
+      ]
+    }
+    right={true}
+    sideLeft={true}
+    sideRight={true}
+    size={
+      Object {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0,
+      }
+    }
+    toggle={[Function]}
+  />
+</div>
+`;
+
+exports[`Dropdown template should match snapshot without default props 1`] = `
+<div
+  className="toolkit wrapper"
+>
+  <Button
+    className="button"
+    dataQa=""
+    disabled={false}
+    fill="#ffffff"
+    onClick={[Function]}
+    reverse={false}
+    size="default"
+    style={
+      Object {
+        "backgroundColor": "#29b9ad",
+      }
+    }
+    theme="default"
+    title=""
+    type="button"
+  >
+    <Icon
+      className="iconButton"
+      component={[Function]}
+      dataQa=""
+      fill="#ffffff"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      size="16"
+      stroke="#ffffff"
+    />
+  </Button>
+  <OptionContainer
+    active=""
+    className=""
+    onClick={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "labelTest",
+          "on": true,
+          "value": "valueTest",
+        },
+      ]
+    }
+    right={false}
+    sideLeft={false}
+    sideRight={false}
+    size={
+      Object {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0,
+      }
+    }
+    toggle={[Function]}
+  />
+</div>
+`;

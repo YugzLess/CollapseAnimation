@@ -1,0 +1,96 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+.rt-td, .-pagination { padding: em($space) !important }
+.rt-th, .rt-td { border-right: none !important }
+.rt-thead, .-pagination { box-shadow: none !important }
+
+.table {
+  font-size: em(14) !important;
+  border-radius: em($radius, 14);
+
+  .rt-tr { align-items: center }
+
+  .-header {
+    height: em(32, 14);
+    background-color: $greyMed;
+    text-align: left;
+    border-radius: em($radius, 14) em($radius, 14) 0 0;
+
+    .rt-th {
+      height: em(32, 14);
+      padding: em(8);
+      color: $squidInk !important;
+      text-align: left;
+      &:focus{ outline: none }
+
+      input { max-width: 100% }
+    }
+  }
+
+  .-filters {
+    justify-content: center;
+    height: em(46, 14);
+    background-color: transparent;
+    border-bottom: em($border-width) $border-style $borderColor !important;
+
+    .rt-tr {
+      border-bottom: solid em(1, 14) $borderColor;
+      box-sizing: border-box;
+    }
+
+    input, select {
+      height: em(36, 14);
+      border-color: $borderColor;
+    }
+  }
+
+  .rt-tbody {
+    .rt-tr {
+      align-items: center;
+    }
+
+    .rt-tr-group:not(:last-child) { border-bottom: em(1, 14) solid $borderColor !important }
+
+    .-odd { background-color: $greyLight !important }
+  }
+
+  .-pagination {
+    border-top: em(1, 14) solid $borderColor !important;
+
+    .-btn {
+      background-color: $balataGreen !important;
+      color: $white !important;
+
+      &:hover { background-color: $articCitric !important }
+
+      &:disabled, &:disabled:hover {
+        background-color: $greyDarker !important;
+        border-color: $greyDarker !important;
+        cursor: not-allowed;
+      }
+    }
+
+    @media only screen and (min-width: 900px) {
+      .-center {
+        position: relative;
+        .-pageJump, span, select, input { height: 100% !important }
+        input { border: em(1, 14) solid $borderColor !important }
+      }
+    }
+
+
+    .select-wrap {
+      select {
+        border: em(1, 14) solid $borderColor !important;
+        padding: em($halfSpace) !important;
+        border-radius: em($radius) !important;
+      }
+    }
+  }
+}

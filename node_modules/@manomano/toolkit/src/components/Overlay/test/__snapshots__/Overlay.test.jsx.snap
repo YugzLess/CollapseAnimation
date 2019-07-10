@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay should match snapshot 1`] = `
+<Overlay
+  backgroundColor="#000"
+  on={false}
+  onClick={[MockFunction]}
+  zIndex={8000}
+>
+  <Transition
+    config={
+      Object {
+        "precision": 0.9,
+      }
+    }
+    enter={
+      Object {
+        "o": 0.5,
+      }
+    }
+    from={
+      Object {
+        "o": 0,
+      }
+    }
+    items={false}
+    keys={[Function]}
+    leave={
+      Object {
+        "o": 0,
+      }
+    }
+    native={true}
+    reset={false}
+    unique={false}
+  >
+    <ForwardRef
+      config={
+        Object {
+          "precision": 0.9,
+        }
+      }
+      delay={0}
+      filter={[Function]}
+      from={
+        Object {
+          "o": 0,
+        }
+      }
+      key="0"
+      native={true}
+      primitive={[Function]}
+      reset={false}
+      state="enter"
+      states={
+        Object {
+          "enter": Object {
+            "o": 0.5,
+          },
+        }
+      }
+    >
+      <KeyframesImpl
+        config={
+          Object {
+            "precision": 0.9,
+          }
+        }
+        delay={0}
+        filter={[Function]}
+        forwardRef={null}
+        from={
+          Object {
+            "o": 0,
+          }
+        }
+        native={true}
+        primitive={[Function]}
+        reset={false}
+        state="enter"
+        states={
+          Object {
+            "enter": Object {
+              "o": 0.5,
+            },
+          }
+        }
+      >
+        <Spring
+          config={
+            Object {
+              "precision": 0.9,
+            }
+          }
+          delay={0}
+          force={false}
+          from={
+            Object {
+              "o": 0,
+            }
+          }
+          immediate={false}
+          inject={[Function]}
+          native={true}
+          onRest={[Function]}
+          reset={false}
+          to={
+            Object {
+              "o": 0.5,
+            }
+          }
+        />
+      </KeyframesImpl>
+    </ForwardRef>
+  </Transition>
+</Overlay>
+`;

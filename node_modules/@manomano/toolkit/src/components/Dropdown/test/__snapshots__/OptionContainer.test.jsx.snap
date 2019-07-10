@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptionContainer should match snapshot 1`] = `
+<Fragment>
+  <ToggleDown
+    className="container"
+    on={false}
+    style={
+      Object {
+        "left": undefined,
+        "right": undefined,
+        "top": undefined,
+      }
+    }
+  >
+    <ul
+      className="ul list"
+    >
+      <li
+        className="li"
+        data-value="test"
+        key="0"
+        onClick={null}
+        onKeyPress={null}
+      >
+        <span
+          key="0"
+          onClick={null}
+          onKeyPress={null}
+        >
+          test
+        </span>
+      </li>
+    </ul>
+  </ToggleDown>
+</Fragment>
+`;

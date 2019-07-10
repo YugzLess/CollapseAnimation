@@ -1,0 +1,27 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+.alert {
+  position: fixed;
+  width: em(300);
+  cursor: pointer;
+  z-index: z($layers, modal);
+
+  &.right {
+    right: em($space);
+  }
+  &.left {
+    left: em($space);
+  }
+  &.top {
+    top: em($space);
+  }
+  &.bottom {
+    bottom: em($space);
+  }
+}

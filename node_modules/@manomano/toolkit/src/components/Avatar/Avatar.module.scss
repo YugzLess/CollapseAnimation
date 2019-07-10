@@ -1,0 +1,30 @@
+/**
+ * Copyright (c) Colibri SAS - ManoMano
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../styles/import.scss';
+
+.avatar {
+  position: relative;
+  display: flex;
+
+  &.big {
+    width: em(48);
+    height: em(48);
+    clip-path: url(#maskAvatarBig);
+  }
+
+  &.small {
+    width: em(32);
+    height: em(32);
+    clip-path: url(#maskAvatarSmall);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

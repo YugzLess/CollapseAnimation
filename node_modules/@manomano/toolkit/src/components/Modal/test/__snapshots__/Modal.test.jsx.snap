@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should match snapshot 1`] = `
+<Portal>
+  <Transition
+    config={
+      Object {
+        "friction": 23,
+        "mass": 0.6,
+        "tension": 350,
+      }
+    }
+    enter={
+      Object {
+        "o": 1,
+        "s": 1,
+        "y": "0",
+      }
+    }
+    from={
+      Object {
+        "o": 0,
+        "s": 0.75,
+        "y": "33vh",
+      }
+    }
+    items={false}
+    keys={[Function]}
+    leave={
+      Object {
+        "o": 0,
+        "s": 0.75,
+        "y": "33vh",
+      }
+    }
+    native={true}
+    reset={false}
+    unique={false}
+  >
+    <Component />
+  </Transition>
+</Portal>
+`;
